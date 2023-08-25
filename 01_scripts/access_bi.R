@@ -32,7 +32,7 @@ pa_bg <- pa_bg[ ! pa_bg$geoid %in% nopopgeo, ]
 
 load("00_data/inla.residuals.Rdata")
 
-# model <- inla(formula = crc.x ~ f(idarea, model = "bym", graph = nb.b) + f(idarea1, idtime, model = "iid") + idtime + mm2sfca_45_spar        + ruca_3_mvu + ruca_3_rvu + crcsadh + age_ge65i + sqrt(blacki) + sqrt(nohsgrad_25plusi) + sqrt(unemployedi) + sqrt(householder45plus_povertyi),
+# model <- inla(formula = crc.x ~ f(idarea, model = "bym", graph = nb.b) + f(idarea1, idtime, model = "iid") + idtime + mm2sfca_45_spar + ruca_3_mvu + ruca_3_rvu + crcsadh + age_ge65i + sqrt(blacki) + sqrt(nohsgrad_25plusi) + sqrt(unemployedi) + sqrt(householder45plus_povertyi),
 #               family = "poisson", data = ds,
 #               control.predictor = list(compute = TRUE),
 #               control.compute=list(config=TRUE, dic=TRUE, cpo=TRUE, return.marginals.predictor=TRUE)
